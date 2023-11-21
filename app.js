@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const { EmbedBuilder, WebhookClient } = require("discord.js");
 
 const webhookClient = new WebhookClient({
-  url: "https://discordapp.com/api/webhooks/1176668632172990494/0BWv-j2EZHDZ-xrLLORs6VKkS2jsH_SbD0-xe14D0uy4zz7N1APAK39TxbtpN5qCDIJ_",
+  url: "https://discordapp.com/api/webhooks/1071215567693955072/pL7ZaA8z9RwA84L8ftz1fpLepeQc_UYJfarJW5paBuwGE3LitUCjDdqEuuKXz3vp4Tvu",
 });
 
 const app = express();
