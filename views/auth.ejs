@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="css/favicon2.png" />
+
+    <title>Forgot Password</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/datepicker.min.css" rel="stylesheet" />
+    <link href="css/dwd_ui_2.css" rel="stylesheet" />
+
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <!-- SB: Custom Print stylesheet for UIM CSS-->
+    <link href="css/css_print.css" rel="stylesheet" media="print" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/static/tb3/assets/js/html5shiv.js"></script>
+      <script src="/static/tb3/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- GGoyal: This script has to be loaded as part of header other wise JQuery Script functions wouldn't work -->
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="css/index_1.html"
+        style="display: none; visibility: hidden"
+        width="0"
+        height="0"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="whole-page-wrapper">
+      <div class="printImg">
+        <img
+          src="css/top_banner_02.gif"
+          style="display: block; margin: 0 auto"
+          alt=""
+        />
+      </div>
+      <div class="navbar navbar-inverse navbar-fixed-top hidden-print">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#" tabindex="-1"
+              ><img src="css/top_banner_02-2.png" alt="uplink logo"
+            /></a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li>|</li>
+              <li>
+                <a
+                  href="http://www.unemployment.in.gov/"
+                  target="_blank"
+                  title="Contact"
+                >
+                  Resources <span class="glyphicon glyphicon-book"></span>
+                  <span class="glyphicon glyphicon-phone-alt"></span>
+                  <span class="glyphicon glyphicon-question-sign"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="container">
+          <h1>Forgot Password</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <form
+          id="cSSForgotPasswordCommand"
+          name="forgotPasswordForm"
+          class="form-horizontal"
+          action="/auth"
+          method="post"
+        >
+          <input type="hidden" name="previousPageFrom" value="" />
+
+          <div class="alert alert-warning" style="color: red">
+            Incorrect username or password, you must correctly enter the
+            information requested below.
+          </div>
+          <span class="help-block">
+            Fields marked with an asterisk
+            <span class="mandatory_field">*</span> are required.
+          </span>
+          <div class="shadow-panel">
+            <div class="content">
+              <div class="form-group"></div>
+
+              <div class="form-group">
+                <label for="username" class="col-md-6 control-label"
+                  >Email <span class="mandatory_field">*</span>
+                </label>
+                <div class="col-md-6">
+                  <!-- zz change for PROD00140395 -->
+
+                  <input
+                    type="text"
+                    alt="userName"
+                    id="username"
+                    maxlength="60"
+                    name="email"
+                    value=""
+                    class="form-control fc-inline"
+                    tabindex="5"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="username" class="col-md-6 control-label"
+                  >Password <span class="mandatory_field">*</span>
+                </label>
+                <div class="col-md-6">
+                  <!-- zz change for PROD00140395 -->
+
+                  <input
+                    type="password"
+                    alt="userName"
+                    id="username"
+                    maxlength="60"
+                    name="password"
+                    value=""
+                    class="form-control fc-inline"
+                    tabindex="5"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer"></div>
+          </div>
+          <div class="form-group text-center">
+            <a href="#" class="btn btn-default" tabindex="8"
+              >Exit to Logon Screen
+            </a>
+            <input
+              type="submit"
+              name="Submit"
+              value="Submit"
+              class="btn btn-primary"
+              tabindex="9"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="uplink-footer">
+      <div class="container text-center">
+        <p>
+          <a target="_blank" tabindex="201" href="http://www.in.gov/dwd/"
+            ><img
+              src="css/DWD_sm.png"
+              alt="Indiana Workforce Development Logo"
+              width="130"
+              height="auto"
+          /></a>
+          <a target="_blank" tabindex="202" href="http://www.in.gov/"
+            ><img src="css/DWD_seal_sm2.png" alt="Indiana State Seal Logo"
+          /></a>
+          <a
+            target="_blank"
+            tabindex="203"
+            href="http://www.in.gov/dwd/WorkOne/"
+            ><img src="css/WO_sm2.png" alt="WorkOne Logo"
+          /></a>
+        </p>
+        <p class="text-muted"><small> CSS UIM01.28.4 20231031 17:32 </small></p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <div
+      id="ui-datepicker-div"
+      class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"
+    ></div>
+  </body>
+</html>

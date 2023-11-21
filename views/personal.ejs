@@ -1,0 +1,373 @@
+<!DOCTYPE html><html  lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="css/favicon2.png">
+    
+    <title>Verify Account</title> 
+    
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/datepicker.min.css" rel="stylesheet">
+    <link href="css/dwd_ui_2.css" rel="stylesheet">
+    
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    
+    <!-- SB: Custom Print stylesheet for UIM CSS-->
+    <link href="css/css_print.css" rel="stylesheet" media="print">
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="/static/tb3/assets/js/html5shiv.js"></script>
+          <script src="/static/tb3/assets/js/respond.min.js"></script>
+        <![endif]-->
+        
+        <!-- GGoyal: This script has to be loaded as part of header other wise JQuery Script functions wouldn't work -->
+        
+        
+        <!-- Google Tag Manager -->
+            
+            <!-- End Google Tag Manager -->
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            
+            
+    
+    <meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head>
+    
+    <body>
+    <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="css/index_1.html" style="display:none;visibility:hidden" width="0" height="0"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="whole-page-wrapper">
+            
+            
+    
+    
+    <div class="printImg">
+        <img src="css/top_banner_02.gif" style="display: block; margin: 0 auto;" alt=""> 	
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-top hidden-print">
+      <div class="container">
+       <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand" href="#" tabindex="-1"><img src="css/top_banner_02-2.png" alt="uplink logo"></a>
+       </div>
+     <div class="collapse navbar-collapse">
+    
+                <ul class="nav navbar-nav navbar-right">
+                    <li>|</li>
+                    <li><a href="http://www.unemployment.in.gov/" target="_blank" title="Contact">
+                    Resources <span class="glyphicon glyphicon-book"></span> <span class="glyphicon glyphicon-phone-alt"></span> <span class="glyphicon glyphicon-question-sign"></span></a>
+    
+                    </li>
+                </ul>
+    
+        </div>
+      </div>
+    </div>
+    
+            
+            
+    
+    <div class="header">
+    <div class="container">
+    <h1>Verify Account</h1>
+    </div>
+    </div>
+    
+            <div class="container">
+                
+    
+    
+    
+        <span class="help-block">Fields marked with an asterisk <span class="mandatory_field">*</span> are required. </span>
+        <div id="message"></div>
+    
+    <form id="cSSCreateAccountCommand" name="createAccountForm" action="/personal" method="post">
+            
+        <div class="row">
+            <div class="col-md-12">
+                
+                
+                <div class="shadow-panel">
+                    <div class="header section-header">
+                        Personal Information
+                    </div>
+                    <div class="content">
+                        <div class="row">
+                            
+                                <div class="col-md-6 form-group middle ">
+                                    <div class="col-md-4"><label for="fname" class="control-label fc-inline">First Name<span class="mandatory_field">*</span> </label></div>
+                                        <div class="col-md-8">
+                                            <input type="text" tabindex="8" id="fname" name="fName" alt="firstName" value="" maxlength="50" class="form-control fc-inline">
+                                        </div>
+                                    
+                                </div>
+                            
+                            
+                                <div class="col-md-6 form-group middle ">
+                                    <div class="col-md-4"><label for="mi" class="control-label fc-inline">Middle Initial</label></div>
+                                    <div class="col-md-8"><input type="text" tabindex="9" maxlength="1" name="mName" alt="middleName" size="2" value="" class="form-control fc-inline">
+                                    </div>
+                                    
+                                </div>
+                            
+                            
+                                <div class="col-md-6 form-group middle ">
+                                    <div class="col-md-4"><label for="lname" class="control-label fc-inline">Last Name  <span class="mandatory_field">*</span> </label></div>
+                                        <div class="col-md-8">
+                                            <input type="text" tabindex="10" name="lName" id="lname" value="" alt="lName" maxlength="50" class="form-control fc-inline">
+                                        </div>
+                                    
+                                </div>
+                            
+                            
+                                <div class="col-md-6 form-group middle ">
+                                    <div class="col-md-4"><label for="" class="control-label fc-inline">Suffix </label></div>
+                                    <div class="col-md-8"><select name="suffix" id="nameSuffix" class="form-control fc-inline" tabindex="11">
+    <option value=" " selected="selected" > </option>
+    <option value="SR">Sr.</option>
+    <option value="JR">Jr.</option>
+    <option value="III">III</option>
+    <option value="CPA">Certified Public Accountant</option>
+    <option value="DDS">Doctor of Dental Surgery</option>
+    <option value="MD">Doctor of Medicine</option>
+    <option value="RN">Registered Nurse</option>
+    <option value="INC">Incorporated</option>
+    <option value="ED">Doctor of Education</option>
+    <option value="PHD">Doctor of Philosophy</option>
+    <option value="II">II</option>
+    
+    </select>
+    
+                                    </div>
+                                    
+                                </div>
+                            
+                            
+                        <!-- SSN DATA -->
+                        
+                            
+                                
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                            <div class="col-md-6 form-group middle ">
+                                <div class="col-md-4"><label for="ssn1" class="control-label fc-inline">SSN <span class="mandatory_field">*</span> </label></div>
+                                <div class="col-md-8">
+                                    <div class="ssnGroup1">
+                                        
+                                            <input tabindex="12" type="password" maxlength="3" id="ssn1" size="3" name="ssn1" autocomplete="off" value="" alt="ssnFrst" style="width: 4em;" class="form-control fc-inline unmask-ssn clear-error ssn">
+                                            
+                                        
+                                        -
+                                        
+                                            <input tabindex="13" type="password" maxlength="2" id="ssn2" size="2" name="ssn2" value="" autocomplete="off" alt="ssn2" style="width: 3em;" class="form-control fc-inline unmask-ssn clear-error ssn">
+                                            
+                                        
+                                        -
+                                        
+                                            <input type="password" tabindex="14" maxlength="4" id="ssn3" size="4" name="ssn3" value="" autocomplete="off" alt="ssn3" style="width: 5em;" class="form-control fc-inline unmask-ssn 
+                                                clear-error ssn">
+                                            
+                                        
+                                        <a style="text-decoration:none;cursor: pointer;"><span class="glyphicon glyphicon-eye-open pad-reveal" tabindex="15" ();"=""></span></a>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                            
+                                
+                            
+                            
+                                
+                            
+                            
+                                
+                            
+                            <div class="col-md-6 form-group middle ">
+                                <div class="col-md-4"><label for="id" class="control-label">Driver License/ Personal ID <span class="mandatory_field">*</span> </label></div>
+                                <div class="col-md-8">
+                                    
+                                   
+                                        <input type="tel" tabindex="10" name="id" id="id" value="" alt="lName" maxlength="50" class="form-control fc-inline">
+                                    
+                                        
+                                    
+                                   
+                                        
+                                    
+                                    
+                                    
+                                    <span id="validSsn" class="glyphicon fc-inline pad-reveal"></span>
+                                </div>
+                            </div>
+
+                            <div id="questionHint" class="sr-only"><p style="color: #FF6600;text-align:justify;">Your security question selection will be displayed 
+                                in the future if you ever need to recover your Username or Password.
+                                </p></div>						
+                                
+                                    <div class="form-group col-md-6 middle ">
+                                        <div class="col-md-5">
+                                            <label for="question" class="control-label">Security Question <span class="mandatory_field">*</span> </label>									
+                                        </div>
+                                        <div class="col-md-7"><select name="question" id="question" class="form-control fc-inline xs-resize" tabindex="6" data-original-title="" title="">
+        <option value="" selected="selected"></option>
+        <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+        <option value="What is your father's middle name?">What is your father's middle name?</option>
+        <option value="What is the name of your favorite pet?">What is the name of your favorite pet?</option>
+        <option value="What is your favorite color?">What is your favorite color?</option>
+        <option value="In what city were you born?">In what city were you born?</option>
+        <option value="What is your favorite sports team name?">What is your favorite sports team name?</option>
+        <option value="What musical instrument do you play?">What musical instrument do you play?</option>
+        <option value="What is your favorite teacher's name?">What is your favorite teacher's name?</option>
+        <option value="What color was your first car?">What color was your first car?</option>
+        <option value="What elementary school did you attend?">What elementary school did you attend?</option>
+        
+        </select>
+        
+                                        </div>
+                                        
+                                    </div>
+                                
+                                <div id="answerHint" class="sr-only"><p style="color: #FF6600;">Please remember your security question answer.  
+                                The security question answer is required if you ever need to recover your Username or Password.
+                                </p></div>
+                                <div class="row">
+                                    <span></span>
+                                </div>
+                                
+                                    <div class="form-group col-md-6 middle ">
+                                        <div class="col-md-5">
+                                            <label for="answer" class="control-label">Answer <span class="mandatory_field">*</span> </label>										
+                                        </div>
+                                        <div class="col-md-7">
+                                        <input tabindex="7" type="text" id="answer" name="answer" data-original-title="Alert" data-container="body" value="" alt="answer" autocomplete="off" maxlength="40" class="form-control fc-inline">									
+                                            
+                                        </div>
+                                    </div>
+                                
+                           
+                            
+                            
+                        <!-- END SSN DATA -->
+                        
+                            
+                                <div class="col-md-6 form-group middle ">
+                                    <div class="col-md-4"><label for="birthDate" class="control-label">Date of Birth <span class="mandatory_field">*</span> </label></div>
+                                    <div class="col-md-8">
+                                    <div class="input-group">
+                                            <input type="text" tabindex="19" size="10" id="birthDate" name="dob" value="" class="form-control datepicker-mycal hasDatepicker" maxlength="10" alt="birthDate" autocomplete="off" placeholder="mm/dd/yyyy">
+                                            
+                                            <span class="input-group-addon calendar datepicker-btn1" id="btnPicker">
+                                                <a style="text-decoration:none;cursor: pointer;"><i class="glyphicon glyphicon-calendar"></i></a>
+                                            </span>
+                                        </div>
+                                        <span class="help-block">
+                                            (mm/dd/yyyy)
+                                        </span>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                        <div class="clearfix col-md-block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <a href="#" tabindex="20" class="btn btn-default">Exit to Logon Screen
+            </a>
+            
+            <input type="submit" class="btn btn-primary" id="Next" tabindex="21" name="Next" value="Continue">
+            
+                
+        </div>
+          <div class="modal fade" id="emailFaqModal" tabindex="-1" role="dialog" aria-labelledby="emailFaqLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog" style="width: auto; max-width: 800px;">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: lightskyblue">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                ×
+                            </button>
+                            <h3 class="modal-title text-center" id="emailFaqLabel">Email FAQ</h3>
+                        </div>
+                        <div class="modal-body">
+                           <div id="faqInfo">
+                           Don't have an e-mail address? You can create an e-mail address for free. Below are links to 5 of the most popular providers of free email addresses:
+                            <div class="row">&nbsp;</div>
+                           <div class="col-md-12 form-group middle">
+                            <ol>
+                                <li><a href="https://accounts.google.com/signUp" target="_blank">Google's Gmail</a></li>
+                                <li><a href="https://edit.yahoo.com/registration" target="_blank">Yahoo Mail</a></li>
+                                <li><a href="https://signup.live.com/signup" target="_blank">Microsoft Outlook.Com</a></li>
+                                <li><a href="https://i.aol.com/reg/signup" target="_blank">AOL Mail</a></li>
+                                <li><a href="https://service.mail.com/registration.html" target="_blank">Mail.Com</a></li>
+                            </ol>
+                           </div>
+                                               <div class="clearfix col-md-block"></div>
+    
+                           <p class="text-center">Need additional help or assistance?  <a href="http://www.in.gov/dwd/2328.htm" target="_blank">Contact Us</a></p>
+                           </div>
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+        </div>		
+        
+        
+        </form>
+            
+    
+    
+            </div>
+        </div>
+    
+        <div class="uplink-footer">
+            
+    
+    <div class="container text-center">
+    <p>
+    <a target="_blank" tabindex="201" href="http://www.in.gov/dwd/"><img src="css/DWD_sm.png" alt="Indiana Workforce Development Logo" width="130" height="auto"></a>
+    <a target="_blank" tabindex="202" href="http://www.in.gov/"><img src="css/DWD_seal_sm2.png" alt="Indiana State Seal Logo"></a>
+    <a target="_blank" tabindex="203" href="http://www.in.gov/dwd/WorkOne/"><img src="css/WO_sm2.png" alt="WorkOne Logo"></a></p>
+    <p class="text-muted"><small>
+    CSS UIM01.28.4 20231031 17:32
+        
+    </small></p>
+    </div>
+        </div>
+    
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

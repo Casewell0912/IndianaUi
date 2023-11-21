@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="css/favicon2.png" />
+
+    <title>Claimant Self Service Logon</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="css/datepicker.min.css" rel="stylesheet" />
+    <link href="css/dwd_ui_2.css" rel="stylesheet" />
+    <link href="css/dwd_ui_new_logon.css" rel="stylesheet" />
+
+    <!-- GGoyal: This script has to be loaded as part of header other wise JQuery Script functions wouldn't work -->
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <style type="text/css">
+      .fancybox-margin {
+        margin-right: 0px;
+      }
+    </style>
+
+    <meta
+      http-equiv="origin-trial"
+      content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"
+    />
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="css/index_2.html"
+        style="display: none; visibility: hidden"
+        width="0"
+        height="0"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="whole-page-wrapper">
+      <!-- TOP NAV Start-->
+      <div class="navbar navbar-inverse navbar-fixed-top hidden-print">
+        <div class="container">
+          <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+					<span class="icon-bar"></span>
+				</button> -->
+            <a class="navbar-brand" href="#"
+              ><img src="css/top_banner_02-2.png" alt="uplink logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- TOP NAV End-->
+      <noscript>
+        <div class="error-warning-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>
+                  <span
+                    class="glyphicon glyphicon-exclamation-sign"
+                    aria-hidden="true"
+                  ></span>
+                  JavaScript is currently disabled in your browser. To learn how
+                  to enable it, choose "More info".
+                  <a
+                    href="http://www.wikihow.com/Turn-on-Javascript-in-Internet-Browsers"
+                    target="_blank"
+                    title="javascriptEnableLink"
+                    class="btn buttonStyle"
+                    >More info</a
+                  >
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </noscript>
+
+      <div class="header-section home-header-bg">
+        <!-- begin Full-Width Header section -->
+        <div class="header-topbar-container" style="margin-bottom: 0">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <h1 class="header-topbar-title">Claimant Self Service</h1>
+              </div>
+
+              <div class="col-sm-5 col-sm-offset-1 hidden-xs">
+                <div class="col-sm-6">
+                  <img
+                    src="css/dwd-logo-reverse.png"
+                    class="img-responsive center-block"
+                    alt="Indiana Workforce Development Logo Image"
+                    width="80"
+                    height="auto"
+                  />
+                </div>
+
+                <div class="col-sm-6">
+                  <img
+                    src="css/workone_logo.png"
+                    class="img-responsive center-block"
+                    alt="Work One Logo Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 col-sm-push-6">
+              <div class="home-login-container">
+                <h2 class="login-header decorated-logon">
+                  <span>User Logon </span>
+                </h2>
+
+                <!--Error Messages -->
+
+                <!--Error Messages End -->
+
+                <form id="logonForm" name="logonForm" action="/" method="post">
+                  <!-- Username form field -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><span
+                          class="glyphicon glyphicon-envelope"
+                          aria-hidden="true"
+                        ></span
+                      ></span>
+                      <label
+                        class="control-label sr-only"
+                        for="j_username"
+                        style="font-size: 18px"
+                      >
+                        UsernameUsername
+                        <span class="mandatory_field fc-inline">*</span>
+                      </label>
+                      <input
+                        class="form-control input-lg"
+                        id="j_username"
+                        autocomplete="off"
+                        type="text"
+                        maxlength="60"
+                        placeholder="Enter email address"
+                        name="email"
+                        value=""
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Password form field -->
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon"
+                        ><span
+                          class="glyphicon glyphicon-lock"
+                          aria-hidden="true"
+                        ></span
+                      ></span>
+                      <label
+                        class="control-label sr-only"
+                        for="j_password"
+                        style="font-size: 18px"
+                      >
+                        PasswordPassword
+                        <span class="mandatory_field fc-inline">*</span>
+                      </label>
+                      <input
+                        id="j_password"
+                        class="form-control input-lg"
+                        autocomplete="off"
+                        type="password"
+                        name="password"
+                        maxlength="20"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+
+                    <input type="hidden" name="fromUrl" id="fromUrl" value="" />
+
+                    <input
+                      type="hidden"
+                      name="csTok"
+                      id="csTok"
+                      value="2ac1d1c3-a4cf-453f-9989-a2e74e5c86df"
+                    />
+                  </div>
+
+                  <div>
+                    <div
+                      class="grecaptcha-badge"
+                      data-style="bottomright"
+                      style="
+                        width: 256px;
+                        height: 60px;
+                        display: block;
+                        transition: right 0.3s ease 0s;
+                        position: fixed;
+                        bottom: 14px;
+                        right: -186px;
+                        box-shadow: gray 0px 0px 5px;
+                        border-radius: 2px;
+                        overflow: hidden;
+                      "
+                    >
+                      <div class="grecaptcha-logo">
+                        <iframe
+                          title="reCAPTCHA"
+                          role="presentation"
+                          name="a-f1cqn6uxw93b"
+                          scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                          src="css/index_4.html"
+                          width="256"
+                          height="60"
+                          frameborder="0"
+                        ></iframe>
+                      </div>
+                      <div class="grecaptcha-error"></div>
+                      <textarea
+                        id="g-recaptcha-response"
+                        name="g-recaptcha-response"
+                        class="g-recaptcha-response"
+                        style="
+                          width: 250px;
+                          height: 40px;
+                          border: 1px solid rgb(193, 193, 193);
+                          margin: 10px 25px;
+                          padding: 0px;
+                          resize: none;
+                          display: none;
+                        "
+                      ></textarea>
+                    </div>
+                    <iframe
+                      style="display: none"
+                      src="css/index_1.html"
+                    ></iframe>
+                  </div>
+                  <button
+                    type="submit"
+                    class="g-recaptcha btn home-login-btn btn-block btn-lg"
+                    data-sitekey="6LdPX7sZAAAAAN08wAPUbRmGCmq5UMsmm9e7xOJY"
+                    data-callback="onSubmit"
+                  >
+                    Sign In<span
+                      class="glyphicon glyphicon-log-in"
+                      aria-hidden="true"
+                    ></span>
+                  </button>
+
+                  <a
+                    class="btn home-register-btn btn-block btn-lg"
+                    href="https://uplink.in.gov/CSS/CSSCreateAccount.htm?_st="
+                    >New User Registration</a
+                  >
+
+                  <div class="row spacer-30">
+                    <div class="col-xs-6">
+                      <a
+                        href="https://uplink.in.gov/CSS/CSSForgotUserName.htm?_st="
+                        class="btn btn-link btn-block"
+                        >Forgot Username?</a
+                      >
+                    </div>
+
+                    <div class="col-xs-6">
+                      <a
+                        href="https://uplink.in.gov/CSS/CSSForgotPassword.htm?_st="
+                        class="btn btn-link btn-block"
+                        >Forgot Password?</a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-sm-pull-6">
+              <div class="header-cta-container-left">
+                <div>
+                  <div>
+                    <h2 class="header-cta-title">New Tool Available</h2>
+                    <div class="header-cta-caption">
+                      <p>
+                        A new tool is now available on UpLink that gives
+                        customer job search guidance based on personal work
+                        history and skill set. This new, optional feature will
+                        not affect Unemployment Insurance benefits. The
+                        <b>Workforce Recommendation Engine</b> is ready to use
+                        for those in search of their next step in employment.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="header-cta-title">WARNING - PLEASE READ</h2>
+                    <div class="header-cta-caption">
+                      <p>
+                        Warning! This system contains U.S. Government
+                        information. By accessing and using this computer
+                        system, you are consenting to system monitoring for law
+                        enforcement and other purposes. Unauthorized use of, or
+                        access to, this computer system may subject you to state
+                        and federal prosecution and penalties as well as civil
+                        penalties.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="header-cta-title">
+                      Beware of Fraudulent Text and Email Messages
+                    </h2>
+                    <div class="header-cta-caption">
+                      <p>
+                        DWD WILL NOT send a text or email message asking you to
+                        click a link to receive benefits or any type of payment.
+                        Clicking on the link and providing personal information
+                        (for example your username, password, or social security
+                        number) will give fraudsters the ability to sign in to
+                        your accounts or sell your information on the dark web.
+                      </p>
+                      <p>
+                        To report fraudulent messages, please
+                        <b
+                          ><a
+                            href="https://www.in.gov/dwd/indiana-unemployment/fraud/"
+                            target="_blank"
+                            title="DWD Fraud Page"
+                            >report it to DWD here</a
+                          ></b
+                        >.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="header-cta-title">
+                      Looking for a job that's a better match? Take your career
+                      to the next level
+                    </h2>
+                    <div class="header-cta-caption">
+                      <p>
+                        <b>Indiana Career Connect</b> is the state's most
+                        prominent online job board powered by the DWD. Includes
+                        resources for both employers and candidates including
+                        job search apps.
+                        <b
+                          ><a
+                            href="https://www.indianacareerconnect.com/"
+                            target="_blank"
+                            >Visit the site to learn more.</a
+                          ></b
+                        >
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="header-cta-title">Notice</h2>
+                    <div class="header-cta-caption">
+                      <p>
+                        Pursuant to 20 CFR § 603.11, confidential claimant
+                        unemployment compensation information and employer wage
+                        information may be requested and utilized for other
+                        governmental purposes, including, but not limited to,
+                        verification of eligibility under other government
+                        programs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-footer-section">
+        <!-- Begin Contact Info Footer Section Div -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h3 class="contact-footer-txt">
+                Questions, Concerns or Inquiries?<br />
+                <small
+                  >Contact us today at 1-800-891-6499. Open 8am - 5:30pm Monday
+                  - Friday.
+                </small>
+              </h3>
+            </div>
+          </div>
+          <div class="row spacer-30 text-center">
+            <span class="sr-only"
+              >Warning: The following link opens in a new window!
+            </span>
+            <a href="https://get.adobe.com/reader/" target="_blank">
+              <img
+                src="css/Get_Adobe_Acrobat_Reader_icon.png"
+                alt="Get Adobe Acrobat Reader.  Will open into a new window."
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ending Whole Page Wrapper Div -->
+
+    <div class="uplink-footer">
+      <div class="container text-center">
+        <p>
+          <a target="_blank" href="http://www.in.gov/dwd/"
+            ><img
+              src="css/DWD_sm.png"
+              alt="Indiana Workforce Development Logo"
+              width="130"
+              height="auto"
+          /></a>
+          <a target="_blank" href="http://www.in.gov/"
+            ><img src="css/DWD_seal_sm2.png" alt="Indiana State Seal Logo"
+          /></a>
+
+          <a target="_blank" href="http://www.in.gov/dwd/WorkOne/"
+            ><img src="css/WO_sm2.png" alt="WorkOne Logo"
+          /></a>
+        </p>
+
+        <p class="text-muted">
+          <small> CSS UIM01.28.4 20231031 17:32 </small>
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <div
+      style="
+        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        top: -10000px;
+        left: 0px;
+        right: 0px;
+        transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s;
+        opacity: 0;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          top: 0px;
+          left: 0px;
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+          opacity: 0.5;
+        "
+      ></div>
+      <div
+        style="
+          margin: 0px auto;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          position: fixed;
+          border: 1px solid rgb(204, 204, 204);
+          z-index: 2000000000;
+          background-color: rgb(255, 255, 255);
+        "
+      >
+        <iframe
+          title="recaptcha challenge expires in two minutes"
+          style="width: 100%; height: 100%"
+          name="c-f1cqn6uxw93b"
+          scrolling="no"
+          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+          src="css/index_3.html"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
